@@ -1,6 +1,6 @@
 <?php
 
 $arr = array('Hello','World!!');
-echo implode(" ", $arr);
+echo  "<h1>" . implode(" ", $arr) . "</h1>";
 
 ?>
