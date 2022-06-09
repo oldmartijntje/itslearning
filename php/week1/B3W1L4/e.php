@@ -11,8 +11,20 @@
 
 <body>
     <?php
-                    
-        echo "<h1>pp<h1>";
+    echo '<h1>goedemorgen</h1>';
+    echo '<h1>het is nu ' . (date("h:i", time())) . '</h1>';
     
     ?>
+    <?php if ((int)date("h", time()) >= 6 && (int)date("h", time()) < 12) : ?>
+        <html style="background-image: url('morning.png');">
+    <?php endif; ?>
+    <?php if ((int)date("h", time()) >= 12 && (int)date("h", time()) < 18) : ?>
+        <html style="background-image: url('morning.png');">
+    <?php endif; ?>
+    <?php if ((int)date("h", time()) >= 18) : ?>
+        <html style="background-image: url('morning.png');">
+    <?php endif; ?>
+    <?php if ((int)date("h", time()) < 6) : ?>
+        <html style="background-image: url('morning.png');">
+    <?php endif; ?>
 </body>
