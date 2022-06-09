@@ -1,5 +1,6 @@
 <?php
 
-echo "<h1>hello world</h1>";
+$e = 'hello world!';
+echo "<h1>$e</h1>";
 
 ?>
